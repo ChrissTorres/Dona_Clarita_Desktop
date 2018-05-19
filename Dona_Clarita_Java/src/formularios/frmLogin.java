@@ -6,6 +6,8 @@
 package formularios;
 
 import clases.Datos;
+import java.awt.Frame;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -130,6 +132,8 @@ public class frmLogin extends javax.swing.JFrame {
                 return;
             }
          frmPrincipal miPrincipal = new frmPrincipal();
+         this.setVisible(false);
+         miPrincipal.setExtendedState(JFrame.MAXIMIZED_BOTH);
                  miPrincipal.setVisible(true);
         
     }//GEN-LAST:event_btnAceptarActionPerformed
